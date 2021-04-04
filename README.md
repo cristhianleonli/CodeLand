@@ -7,3 +7,4 @@ What's in the box:
 - [Onboarding flow style A](https://github.com/cristhianleonli/codeland/tree/main/OnboardingStyleA)
 - [Navbar Style A](https://github.com/cristhianleonli/codeland/tree/main/CustomNavbarA)
 - [Alerts](https://github.com/cristhianleonli/codeland/tree/main/Alerts)
+- [Joystick](https://github.com/cristhianleonli/codeland/tree/main/Joystick)
