@@ -2,4 +2,4 @@
 
 | Options | Multiple | Video |
 | ------ | ------ | ------ |
-| ![launch](https://github.com/cristhianleonli/Alerto/blob/develop/screenshots/options.png) | ![launch](https://github.com/cristhianleonli/Alerto/blob/develop/screenshots/alert.png) | <img src="https://github.com/cristhianleonli/Alerto/blob/develop/screenshots/video.gif" width="700"> |
+| ![launch](https://github.com/cristhianleonli/codeland/blob/main/Alerts/screenshots/options.png) | ![launch](https://github.com/cristhianleonli/codeland/blob/main/Alerts/screenshots/alert.png) | <img src="https://github.com/cristhianleonli/codeland/blob/main/Alerts/screenshots/video.gif" width="700"> |

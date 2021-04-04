@@ -1,6 +1,6 @@
 # Analog Joystick View
 
-<img src="https://github.com/cristhianleonli/Joystick/blob/master/screenshots/quick_video.gif" width="300">
+<img src="https://github.com/cristhianleonli/codeland/blob/main/Joystick/screenshots/quick_video.gif" width="300">
 
 ## What's in the box
 - Joystick.swift
