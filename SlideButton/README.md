@@ -2,7 +2,7 @@
 
 | Regular | Finished | In action |
 | ------ | ------ | ------ |
-| ![regular](https://github.com/cristhianleonli/codeland/blob/main/SliderView/screenshots/screen_1.png) | ![finished](https://github.com/cristhianleonli/codeland/blob/main/SliderView/screenshots/screen_2.png) | <img src="https://github.com/cristhianleonli/codeland/blob/main/SliderView/screenshots/quick_video.gif" width="900"> |
+| ![regular](https://github.com/cristhianleonli/codeland/tree/main/SlideButton/screenshots/screen_1.png) | ![finished](https://github.com/cristhianleonli/codeland/tree/main/SlideButton/screenshots/screen_2.png) | <img src="https://github.com/cristhianleonli/codeland/tree/main/SlideButton/screenshots/quick_video.gif" width="900"> |
 
 ## What's in the box
 - SliderView.swift
