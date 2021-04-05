@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Slider" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V1C-2E-tQL" customClass="SliderView" customModule="Slider" customModuleProvider="target">
+                                <rect key="frame" x="40" y="247" width="334" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="pqk-pR-9Kw"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q8y-nx-NI9" customClass="SliderView" customModule="Slider" customModuleProvider="target">
+                                <rect key="frame" x="40" y="347" width="334" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="dIm-p2-uLz"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jMN-1C-zUm" customClass="SliderView" customModule="Slider" customModuleProvider="target">
+                                <rect key="frame" x="40" y="447" width="334" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="bzp-MT-Okf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jMN-1C-zUm" firstAttribute="top" secondItem="q8y-nx-NI9" secondAttribute="bottom" constant="40" id="4oL-2Y-GP4"/>
+                            <constraint firstItem="V1C-2E-tQL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="CKY-l7-x4l"/>
+                            <constraint firstItem="jMN-1C-zUm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="DJV-fI-SN6"/>
+                            <constraint firstItem="q8y-nx-NI9" firstAttribute="top" secondItem="V1C-2E-tQL" secondAttribute="bottom" constant="40" id="IAc-ny-ScU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jMN-1C-zUm" secondAttribute="trailing" constant="40" id="JUI-jx-uMC"/>
+                            <constraint firstItem="V1C-2E-tQL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="203" id="TbU-Sa-Ilj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V1C-2E-tQL" secondAttribute="trailing" constant="40" id="Xwd-XB-WFz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q8y-nx-NI9" secondAttribute="trailing" constant="40" id="eMj-Rc-6Pn"/>
+                            <constraint firstItem="q8y-nx-NI9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="i5K-Rb-s7m"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="slideView" destination="V1C-2E-tQL" id="O2S-eb-2If"/>
+                        <outlet property="slideView2" destination="q8y-nx-NI9" id="3Oo-Ld-4ed"/>
+                        <outlet property="slideView3" destination="jMN-1C-zUm" id="12S-G6-tbQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+    </scenes>
+</document>

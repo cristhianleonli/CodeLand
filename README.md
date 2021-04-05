@@ -8,3 +8,4 @@ What's in the box:
 - [Navbar Style A](https://github.com/cristhianleonli/codeland/tree/main/CustomNavbarA)
 - [Alerts](https://github.com/cristhianleonli/codeland/tree/main/Alerts)
 - [Joystick](https://github.com/cristhianleonli/codeland/tree/main/Joystick)
+- [SlideButton](https://github.com/cristhianleonli/codeland/tree/main/SlideButton)
