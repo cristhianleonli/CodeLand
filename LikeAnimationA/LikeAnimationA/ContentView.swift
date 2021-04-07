@@ -26,10 +26,10 @@ struct LikeButton: View {
                     .frame(width: state.shapeSize, height: state.shapeSize)
                     .position(x: reader.size.width / 2, y: reader.size.height / 2)
                 
-                let numberOfMarks: Int = 7
+                let numberOfDots: Int = 7
                 
-                ForEach(0..<numberOfMarks) { index in
-                    let rotation = Angle(radians: 2 * .pi / Double(numberOfMarks) * Double(index))
+                ForEach(0..<numberOfDots) { index in
+                    let rotation = Angle(radians: 2 * .pi / Double(numberOfDots) * Double(index))
                     ZStack {
                         // particle on the left
                         Circle()
