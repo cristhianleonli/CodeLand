@@ -13,7 +13,7 @@ struct LikeButton: View {
     var body: some View {
         GeometryReader { reader in
             ZStack {
-                Image("heart")
+                Image(systemName: "suit.heart.fill")
                     .renderingMode(.template)
                     .resizable()
                     .foregroundColor(state.heartColor)
