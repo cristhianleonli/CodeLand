@@ -2,7 +2,7 @@
 
 | Single | Multiple | Both |
 | ------ | ------ | ------ |
-| ![launch](https://github.com/cristhianleonli/codeland/tree/main/SelectionView/screenshots/screen_1.png) | ![launch](https://github.com/cristhianleonli/codeland/tree/main/SelectionView/screenshots/screen_2.png) | <img src="https://github.com/cristhianleonli/codeland/tree/main/SelectionView/screenshots/quick_video.gif" width="900"> |
+| ![launch](https://github.com/cristhianleonli/codeland/main/SelectionView/screenshots/screen_1.png) | ![launch](https://github.com/cristhianleonli/CodeLand/main/SelectionView/screenshots/screen_2.png) | <img src="https://github.com/cristhianleonli/CodeLand/blob/main/SelectionView/screenshots/quick_video.gif" width="900"> |
 
 ## What's in the box
 - `Core/SelectionView.swift`
