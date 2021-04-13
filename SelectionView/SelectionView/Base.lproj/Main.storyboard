@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SelectionView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Single Selection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ZN-ZB-8yh">
+                                <rect key="frame" x="144" y="94" width="126" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQ6-DJ-cno" customClass="SelectionView" customModule="SelectionView" customModuleProvider="target">
+                                <rect key="frame" x="20" y="135" width="374" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="tgj-bu-KTp"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Multiple Selection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6m-5V-xqX">
+                                <rect key="frame" x="137" y="255" width="140" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fva-Ip-Tfe" customClass="SelectionView" customModule="SelectionView" customModuleProvider="target">
+                                <rect key="frame" x="20" y="296" width="374" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="HeS-9q-5Cc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dQ6-DJ-cno" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="18n-Tk-FRS"/>
+                            <constraint firstItem="Fva-Ip-Tfe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6DS-rG-SXE"/>
+                            <constraint firstItem="dQ6-DJ-cno" firstAttribute="top" secondItem="6ZN-ZB-8yh" secondAttribute="bottom" constant="20" id="Hxo-fZ-2De"/>
+                            <constraint firstItem="g6m-5V-xqX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K7w-Nj-CWS"/>
+                            <constraint firstItem="6ZN-ZB-8yh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Lsz-Sg-rsZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fva-Ip-Tfe" secondAttribute="trailing" constant="20" id="ZrX-yn-NfG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dQ6-DJ-cno" secondAttribute="trailing" constant="20" id="e3w-Eh-vSU"/>
+                            <constraint firstItem="Fva-Ip-Tfe" firstAttribute="top" secondItem="g6m-5V-xqX" secondAttribute="bottom" constant="20" id="hIh-xf-LWY"/>
+                            <constraint firstItem="g6m-5V-xqX" firstAttribute="top" secondItem="dQ6-DJ-cno" secondAttribute="bottom" constant="50" id="trb-Gp-93T"/>
+                            <constraint firstItem="6ZN-ZB-8yh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vbF-qF-dWE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="selectionViewMultiple" destination="Fva-Ip-Tfe" id="GAI-Yu-27m"/>
+                        <outlet property="selectionViewSingle" destination="dQ6-DJ-cno" id="Y5E-fE-eCH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
