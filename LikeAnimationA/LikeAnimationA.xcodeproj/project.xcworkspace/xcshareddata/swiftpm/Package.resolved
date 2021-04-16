@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "AnimationSequence",
+        "repositoryURL": "https://github.com/cristhianleonli/AnimationSequence.git",
+        "state": {
+          "branch": "main",
+          "revision": "ff0399f9e39d4adda3f1907b1856fd377853c6d6",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

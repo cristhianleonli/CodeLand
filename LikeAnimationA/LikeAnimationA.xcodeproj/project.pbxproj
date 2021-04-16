@@ -3,16 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F7778932629EBBA00792073 /* AnimationSequence in Frameworks */ = {isa = PBXBuildFile; productRef = 9F7778922629EBBA00792073 /* AnimationSequence */; };
 		9FB5BF96261B08400014470E /* LikeAnimationAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB5BF95261B08400014470E /* LikeAnimationAApp.swift */; };
 		9FB5BF98261B08400014470E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB5BF97261B08400014470E /* ContentView.swift */; };
 		9FB5BF9A261B08420014470E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FB5BF99261B08420014470E /* Assets.xcassets */; };
 		9FB5BF9D261B08420014470E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FB5BF9C261B08420014470E /* Preview Assets.xcassets */; };
 		9FB5BFAC261B08AE0014470E /* LikeAnimationATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB5BFAB261B08AE0014470E /* LikeAnimationATests.swift */; };
-		9FCF838B261C19D000E68CCF /* AnimationSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCF838A261C19D000E68CCF /* AnimationSequence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,6 @@
 		9FB5BFA9261B08AE0014470E /* LikeAnimationATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LikeAnimationATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FB5BFAB261B08AE0014470E /* LikeAnimationATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeAnimationATests.swift; sourceTree = "<group>"; };
 		9FB5BFAD261B08AE0014470E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9FCF838A261C19D000E68CCF /* AnimationSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationSequence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F7778932629EBBA00792073 /* AnimationSequence in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +79,6 @@
 			children = (
 				9FB5BF95261B08400014470E /* LikeAnimationAApp.swift */,
 				9FB5BF97261B08400014470E /* ContentView.swift */,
-				9FCF838A261C19D000E68CCF /* AnimationSequence.swift */,
 				9FB5BF99261B08420014470E /* Assets.xcassets */,
 				9FB5BF9E261B08420014470E /* Info.plist */,
 				9FB5BF9B261B08420014470E /* Preview Content */,
@@ -120,6 +119,9 @@
 			dependencies = (
 			);
 			name = LikeAnimationA;
+			packageProductDependencies = (
+				9F7778922629EBBA00792073 /* AnimationSequence */,
+			);
 			productName = LikeAnimationA;
 			productReference = 9FB5BF92261B08400014470E /* LikeAnimationA.app */;
 			productType = "com.apple.product-type.application";
@@ -169,6 +171,9 @@
 				Base,
 			);
 			mainGroup = 9FB5BF89261B08400014470E;
+			packageReferences = (
+				9F7778912629EBBA00792073 /* XCRemoteSwiftPackageReference "AnimationSequence" */,
+			);
 			productRefGroup = 9FB5BF93261B08400014470E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -203,7 +208,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FCF838B261C19D000E68CCF /* AnimationSequence.swift in Sources */,
 				9FB5BF98261B08400014470E /* ContentView.swift in Sources */,
 				9FB5BF96261B08400014470E /* LikeAnimationAApp.swift in Sources */,
 			);
@@ -455,6 +459,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9F7778912629EBBA00792073 /* XCRemoteSwiftPackageReference "AnimationSequence" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cristhianleonli/AnimationSequence.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9F7778922629EBBA00792073 /* AnimationSequence */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F7778912629EBBA00792073 /* XCRemoteSwiftPackageReference "AnimationSequence" */;
+			productName = AnimationSequence;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9FB5BF8A261B08400014470E /* Project object */;
 }

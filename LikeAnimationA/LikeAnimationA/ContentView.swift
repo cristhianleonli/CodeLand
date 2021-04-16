@@ -1,8 +1,15 @@
 import SwiftUI
+import AnimationSequence
 
 struct ContentView: View {
     var body: some View {
         LikeButton()
+    }
+}
+
+struct ContentPreview: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }
 
@@ -60,62 +67,39 @@ struct LikeButton: View {
             state.heartColor = Color.gray
             state.heartSize = 0
             
+            let springAnimation = AnimationEasing.custom(animation: Animation.spring())
+            
+            // to see more on this AnimationSequence, check https://github.com/cristhianleonli/AnimationSequence
             AnimationSequence()
-                .add { anim in
-                    anim.easing = .spring
-                    anim.duration = 0.05
-                    anim.animations {
-                        state.shapeSize = 50
-                        state.shapeColor = .pink
-                        state.strokeWidth = 20
-                    }
+                .append(duration: 0.05, easing: springAnimation) {
+                    state.shapeSize = 50
+                    state.shapeColor = .pink
+                    state.strokeWidth = 20
                 }
-                .add { anim in
-                    anim.easing = .spring
-                    anim.duration = 0.05
-                    anim.animations {
-                        state.strokeColor = state.shapeColor
-                        state.shapeColor = .clear
-                    }
+                .append(duration: 0.05, easing: springAnimation) {
+                    state.strokeColor = state.shapeColor
+                    state.shapeColor = .clear
                 }
-                .add { anim in
-                    anim.easing = .spring
-                    anim.duration = 0.005
-                    anim.animations {
-                        state.strokeWidth = 0
-                    }
+                .append(duration: 0.005, easing: springAnimation) {
+                    state.strokeWidth = 0
                 }
-                .add { anim in
-                    anim.duration = 0.1
-                    anim.easing = .linear
-                    anim.animations {
-                        state.heartSize = 55
-                        state.heartColor = .pink
-                    }
+                .append(duration: 0.1, easing: .linear) {
+                    state.heartSize = 50
+                    state.heartColor = .pink
                 }
-                .add { anim in
-                    anim.duration = 0.09
-                    anim.easing = .linear
-                    anim.animations {
-                        state.particleSize = 5
-                        state.particleColorA = .pink
-                        state.particleColorB = .pink
-                        state.particleOffsetA = 0
-                        state.particleOffsetB = 5
-                    }
+                .append(duration: 0.09, easing: .linear) {
+                    state.particleSize = 5
+                    state.particleColorA = .pink
+                    state.particleColorB = .pink
+                    state.particleOffsetA = 0
+                    state.particleOffsetB = 5
                 }
-                .add { anim in
-                    anim.duration = 0.25
-                    anim.delay = -0.1
-                    anim.easing = .linear
-                    anim.animations {
-                        state.heartSize = 50
-                        state.particleSize = 0
-                        state.particleColorA = .white
-                        state.particleColorB = .white
-                        state.particleOffsetA = 12
-                        state.particleOffsetB = 16
-                    }
+                .append(duration: 0.25, delay: -0.1, easing: .linear) {
+                    state.particleSize = 0
+                    state.particleColorA = .white
+                    state.particleColorB = .white
+                    state.particleOffsetA = 12
+                    state.particleOffsetB = 16
                 }
                 .start()
         }
