@@ -4,13 +4,13 @@ Here's some of the iOS code I've written for [CodeLand](https://instagram.com/co
 What's in the box:
 
 ### SwiftUI
-- [Burger menu - SwiftUI](https://github.com/cristhianleonli/codeland/tree/main/BurgerMenuA)
-- [Onboarding Flow A - SwiftUI](https://github.com/cristhianleonli/codeland/tree/main/OnboardingStyleA)
-- [Like button animation - SwiftUI](https://github.com/cristhianleonli/codeland/tree/main/LikeAnimationA)
+- <a href="https://github.com/cristhianleonli/codeland/tree/main/BurgerMenuA" target="_blank">Burger menu</a>
+- <a href="https://github.com/cristhianleonli/codeland/tree/main/OnboardingStyleA" target="_blank">Onboarding Flow A</a>
+- <a href="https://github.com/cristhianleonli/codeland/tree/main/LikeAnimationA" target="_blank">Like button animation</a>
 
 ### UIKit
-- [TabBar A - UIKit](https://github.com/cristhianleonli/codeland/tree/main/CustomNavbarA)
-- [Alerts - UIKit](https://github.com/cristhianleonli/codeland/tree/main/Alerts)
-- [Joystick- UIKit](https://github.com/cristhianleonli/codeland/tree/main/Joystick)
-- [SlideButton - UIKit](https://github.com/cristhianleonli/codeland/tree/main/SlideButton)
-- [Selection view - UIKit](https://github.com/cristhianleonli/codeland/tree/main/SelectionView)
+<a href="https://github.com/cristhianleonli/codeland/tree/main/CustomNavbarA" target="_blank">TabBar A</a>
+<a href="https://github.com/cristhianleonli/codeland/tree/main/Alerts" target="_blank">Alerts</a>
+<a href="https://github.com/cristhianleonli/codeland/tree/main/Joystick" target="_blank">Joystick</a>
+<a href="https://github.com/cristhianleonli/codeland/tree/main/SlideButton" target="_blank">SlideButton</a>
+<a href="https://github.com/cristhianleonli/codeland/tree/main/SelectionView" target="_blank">Selection view</a>
